@@ -14,6 +14,17 @@ document.addEventListener('DOMContentLoaded', () => {
             saveReservation(reservation);
             displayReservations();
             form.reset();
+            Swal.fire({
+                icon: 'success',
+                title: 'Reserva realizada',
+                text: `Tu reserva para ${people} personas el ${date} ha sido realizada con éxito.`,
+            });
+        } else {
+            Swal.fire({
+                icon: 'error',
+                title: 'Error',
+                text: 'Por favor, completa todos los campos.',
+            });
         }
     });
 
@@ -47,9 +58,15 @@ document.addEventListener('DOMContentLoaded', () => {
         reservations.splice(index, 1);
         localStorage.setItem('reservations', JSON.stringify(reservations));
         displayReservations();
+        Swal.fire({
+            icon: 'info',
+            title: 'Reserva eliminada',
+            text: 'La reserva ha sido eliminada con éxito.',
+        });
     }
 
     // Inicializar la lista de reservas al cargar la página
     displayReservations();
 });
+
 
