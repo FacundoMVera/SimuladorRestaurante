@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Inicializar la lista de reservas al cargar la página
+    
     displayReservations();
 });
 

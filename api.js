@@ -1,7 +1,6 @@
-// api.js
 
 async function obtenerMenu() {
-    const menuContainer = document.getElementById('menu'); // Asegúrate de que este ID esté en tu HTML
+    const menuContainer = document.getElementById('menu'); 
 
     if (!menuContainer) {
         console.error('Elemento con ID "menu" no encontrado.');
@@ -9,7 +8,7 @@ async function obtenerMenu() {
     }
 
     try {
-        const apiKey = '97de348297764bafa4252b440df1029f'; // Reemplaza esto con tu clave API real
+        const apiKey = '97de348297764bafa4252b440df1029f'; 
         const respuesta = await fetch(`https://api.spoonacular.com/food/menuItems/search?query=restaurant&apiKey=${apiKey}`);
         
         if (!respuesta.ok) {
@@ -24,7 +23,7 @@ async function obtenerMenu() {
             return;
         }
 
-        // Procesar los datos y actualizar el DOM
+        
         menuContainer.innerHTML = menu.map(item => `
             <div class="menu-item">
                 <h3>${item.title}</h3>
@@ -38,7 +37,7 @@ async function obtenerMenu() {
     }
 }
 
-// Llamar a la función cuando el documento esté listo
+
 document.addEventListener('DOMContentLoaded', () => {
     obtenerMenu();
 });

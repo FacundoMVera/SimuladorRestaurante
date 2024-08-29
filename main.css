@@ -7,7 +7,7 @@ body {
   flex-direction: column;
 }
 
-/* Contenedor principal para el contenido */
+
 .container {
   flex: 1;
   padding: 20px;
@@ -16,7 +16,7 @@ body {
   background-position: center;
 }
 
-/* Estilos del header */
+
 header {
   background: rgba(0, 0, 0, 0.7);
   color: #fff;
@@ -24,7 +24,7 @@ header {
   text-align: center;
 }
 
-/* Estilos del formulario */
+
 form {
   background: rgba(255, 255, 255, 0.8);
   padding: 20px;
@@ -57,7 +57,7 @@ form button:hover {
   background-color: #0056b3;
 }
 
-/* Estilos del listado de reservas */
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -84,7 +84,7 @@ button:hover {
   background-color: #c82333;
 }
 
-/* Estilos del footer */
+
 footer {
   background-color: #333;
   color: #fff;
