@@ -5,6 +5,9 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
+  background-image: url(/restaurante-reserva.jpg);
+  background-size: cover; 
+    background-repeat: no-repeat;
 }
 
 

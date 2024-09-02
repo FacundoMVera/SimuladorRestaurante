@@ -27,8 +27,6 @@ async function obtenerMenu() {
         menuContainer.innerHTML = menu.map(item => `
             <div class="menu-item">
                 <h3>${item.title}</h3>
-                <p>${item.description || 'No hay descripción disponible.'}</p>
-                <p>Precio: ${item.price || 'No disponible'}</p>
             </div>
         `).join('');
     } catch (error) {
